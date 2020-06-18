@@ -1,0 +1,20 @@
+#Deployment Plugin Project File
+#Thu Jun 04 11:06:11 CEST 2020
+build.ant.name=C\:\\Users\\maszl\\Eclipse_Workspace_IoT\\org.eclipse.kura.indoor_blinds/resources/dp/indoor_blinds_build.xml
+build.dp.file=C\:\\Users\\maszl\\Eclipse_Workspace_IoT\\org.eclipse.kura.indoor_blinds/resources/dp/indoor_blinds.dp
+build.location=
+bundles.0.bundle_path=C\:\\Users\\maszl\\EclipseExported\\plugins\\org.eclipse.kura.indoor_blinds_1.0.0.jar
+bundles.0.customizer=false
+bundles.0.headers.count=0
+bundles.0.missing=false
+bundles.0.name=bundles/org.eclipse.kura.indoor_blinds_1.0.0.jar
+bundles.0.symbolic_name=org.eclipse.kura.indoor_blinds;singleton\:\=true
+bundles.0.version=1.0.0
+bundles.count=1
+certificates.count=0
+general.signbundles=false
+headers.other.headers=
+headers.symbolic.name=indoor_blinds
+headers.version=1.0.0
+resources.count=0
+

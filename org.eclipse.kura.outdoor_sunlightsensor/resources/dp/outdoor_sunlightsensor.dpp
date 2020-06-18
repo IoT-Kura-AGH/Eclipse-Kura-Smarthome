@@ -1,0 +1,20 @@
+#Deployment Plugin Project File
+#Tue Jun 09 16:19:14 CEST 2020
+build.ant.name=<.>\\resources\\dp\\outdoor_sunlightsensor_build.xml
+build.dp.file=<.>\\resources\\dp\\outdoor_sunlightsensor.dp
+build.location=
+bundles.0.bundle_path=C\:\\Users\\maszl\\EclipseExported\\plugins\\org.eclipse.kura.outdoor_sunlightsensor_1.0.0.202006091619.jar
+bundles.0.customizer=false
+bundles.0.headers.count=0
+bundles.0.missing=false
+bundles.0.name=bundles/org.eclipse.kura.outdoor_sunlightsensor_1.0.0.202006091619.jar
+bundles.0.symbolic_name=org.eclipse.kura.outdoor_sunlightsensor
+bundles.0.version=1.0.0.202006091619
+bundles.count=1
+certificates.count=0
+general.signbundles=false
+headers.other.headers=
+headers.symbolic.name=outdoor_sunlightsensor
+headers.version=1.0.0
+resources.count=0
+

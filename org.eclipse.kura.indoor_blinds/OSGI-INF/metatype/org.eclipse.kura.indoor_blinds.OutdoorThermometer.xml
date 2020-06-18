@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<MetaData xmlns="http://www.osgi.org/xmlns/metatype/v1.2.0" localization="en_us">
+    <OCD id="org.eclipse.kura.indoor_blinds.OutdoorThermometer"
+        name="Indoor Blinds"
+        description="This is a simulator for an indoor blinds application. Its configuration options will be passed down the smart indoor blinds.">
+
+        <AD id="CloudSubscriber.target"
+            name="CloudSubscriber Target Filter"
+            type="String"
+            cardinality="0"
+            required="true"
+            default="(kura.service.pid=changeme)"
+            description="Specifies, as an OSGi target filter, the pid of the Cloud Subscriber used to subscribe to the messages from the cloud platform."/>
+
+    </OCD>
+
+    <Designate pid="org.eclipse.kura.indoor_blinds.OutdoorThermometer">
+        <Object ocdref="org.eclipse.kura.indoor_blinds.OutdoorThermometer"/>
+    </Designate>
+</MetaData>

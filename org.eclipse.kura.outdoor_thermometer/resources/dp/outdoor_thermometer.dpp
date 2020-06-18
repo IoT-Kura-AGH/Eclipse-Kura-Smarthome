@@ -1,0 +1,20 @@
+#Deployment Plugin Project File
+#Thu May 28 06:42:04 CEST 2020
+build.ant.name=C\:\\Users\\maszl\\Eclipse_Workspace_IoT\\org.eclipse.kura.outdoor_thermometer/resources/dp/outdoor_thermometer_build.xml
+build.dp.file=C\:\\Users\\maszl\\Eclipse_Workspace_IoT\\org.eclipse.kura.outdoor_thermometer/resources/dp/outdoor_thermometer.dp
+build.location=
+bundles.0.bundle_path=C\:\\Users\\maszl\\EclipseExported\\plugins\\org.eclipse.kura.outdoor_thermometer_1.0.0.jar
+bundles.0.customizer=false
+bundles.0.headers.count=0
+bundles.0.missing=false
+bundles.0.name=bundles/org.eclipse.kura.outdoor_thermometer_1.0.0.jar
+bundles.0.symbolic_name=org.eclipse.kura.outdoor_thermometer;singleton\:\=true
+bundles.0.version=1.0.0
+bundles.count=1
+certificates.count=0
+general.signbundles=false
+headers.other.headers=
+headers.symbolic.name=outdoor_thermometer
+headers.version=1.0.0
+resources.count=0
+

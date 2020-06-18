@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<MetaData xmlns="http://www.osgi.org/xmlns/metatype/v1.2.0" localization="en_us">
+    <OCD id="org.eclipse.kura.outdoor_thermometer.OutdoorThermometer"
+        name="Outdoor Thermometer"
+        description="This is a simulator for an outdoor thermometer application. Its configuration options will be passed down the smart outdoor thermometer.">
+
+		<Icon resource="OSGI-INF/thermo.svg" size="32"/>
+
+        <AD id="CloudPublisher.target"
+            name="CloudPublisher Target Filter"
+            type="String"
+            cardinality="0"
+            required="true"
+            default="(kura.service.pid=changeme)"
+            description="Specifies, as an OSGi target filter, the pid of the Cloud Publisher used to publish messages to the cloud platform.">
+        </AD>
+        
+        <AD id="mode"  
+            name="Mode"
+            type="String"
+            cardinality="0" 
+            required="true"
+            default="More" 
+            description="Operating mode for the outdoor thermometer.">
+           <Option label="More"  value="More"/>
+           <Option label="Less"   value="Less"/>          
+        </AD>
+        
+        <AD id="temperature_to_watch_for"  
+            name="Temperature to watch for"
+            type="Float"
+            cardinality="0" 
+            required="true"
+            default="0.0" 
+            description="Value for which the outdoor thermometer should watch."/>
+            
+        <AD id="threshold"
+            name="Temperature threshold"
+            type="Float"
+            cardinality="0" 
+            required="true"
+            default="0.0" 
+            description="Threshold for the value for which the outdoor thermometer should watch."/>
+        
+        <AD id="publish.rate"  
+            name="Publishing rate"
+            type="Integer"
+            cardinality="0" 
+            required="true"
+            default="2"
+            min="1" 
+            description="Default message publishing rate in seconds (min 1)."/>
+
+    </OCD>
+
+    <Designate pid="org.eclipse.kura.outdoor_thermometer.OutdoorThermometer">
+        <Object ocdref="org.eclipse.kura.outdoor_thermometer.OutdoorThermometer"/>
+    </Designate>
+</MetaData>
