@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<MetaData xmlns="http://www.osgi.org/xmlns/metatype/v1.2.0" localization="en_us">
+    <OCD id="org.eclipse.kura.air_conditioner.AirConditioner"
+        name="Air Conditioner"
+        description="This is a simulator for an outdoor thermometer application. Its configuration options will be passed down the smart outdoor thermometer.">
+
+        <AD id="CloudSubscriber.target"
+            name="CloudSubscriber Target Filter"
+            type="String"
+            cardinality="0"
+            required="true"
+            default="(kura.service.pid=changeme)"
+            description="Specifies, as an OSGi target filter, the pid of the Cloud Publisher used to publish messages to the cloud platform.">
+        </AD>
+        
+        <AD id="power"  
+            name="Power"
+            type="String"
+            cardinality="0" 
+            required="true"
+            default="off" 
+            description="Power of the device.">
+           <Option label="Off"  value="off"/>
+           <Option label="On"   value="on"/>    
+        </AD>
+        
+        <AD id="mode"  
+            name="Mode"
+            type="String"
+            cardinality="0" 
+            required="true"
+            default="auto" 
+            description="Operating mode for the air conditioner.">
+           <Option label="Auto"  value="auto"/>
+           <Option label="Cooling"   value="cooling"/>
+           <Option label="Warming"   value="warming"/>
+           <Option label="Ventilation"   value="ventilation"/>     
+        </AD>
+        
+        <AD id="target_temperature"  
+            name="Target temperature"
+            type="Float"
+            cardinality="0" 
+            required="true"
+            default="25.0" 
+            description="The target temperature to be reached in the room."/>
+            
+        <AD id="temperature_for_information"
+            name="Temperature for information"
+            type="String"
+            cardinality="0" 
+            required="true"
+            default="set" 
+            description="The temperature to display.">
+           <Option label="Set"  value="set"/>
+           <Option label="Thermometer"   value="thermometer"/>
+        </AD>
+            
+        <AD id="target_fan_speed"
+            name="Target fan speed"
+            type="String"
+            cardinality="0" 
+            required="true"
+            default="auto" 
+            description="Target fan speed of the air conditioner.">
+           <Option label="Auto"  value="auto"/>
+           <Option label="Low"   value="low"/>
+           <Option label="Medium"   value="medium"/>   
+           <Option label="High"   value="high"/>   
+        </AD>
+
+    </OCD>
+
+    <Designate pid="org.eclipse.kura.air_conditioner.AirConditioner">
+        <Object ocdref="org.eclipse.kura.air_conditioner.AirConditioner"/>
+    </Designate>
+</MetaData>
