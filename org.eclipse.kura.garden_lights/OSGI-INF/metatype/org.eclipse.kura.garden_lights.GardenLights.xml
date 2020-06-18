@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<MetaData xmlns="http://www.osgi.org/xmlns/metatype/v1.2.0" localization="en_us">
+    <OCD id="org.eclipse.kura.garden_lights.GardenLights"
+        name="GardenLights"
+        description="This is a simulator for an garden lights gateway application. Its configuration options will be passed down the smart garden lights.">
+
+		<Icon resource="OSGI-INF/lights.png" size="32"/>
+
+		<AD id="CloudSubscriber.target"
+            name="CloudSubscriber Target Filter"
+            type="String"
+            cardinality="0"
+            required="true"
+            default="(kura.service.pid=changeme)"
+            description="Specifies, as an OSGi target filter, the pid of the Cloud Subscriber used to subscribe on messages from cloud.">
+        </AD>
+
+        <AD id="activation_time"
+            name="Activation time"
+            type="String"
+            cardinality="0"
+            required="true"
+            default="20:00"
+            description="Specified time at which garden lights start working."/>
+
+        <AD id="deactivation_time"
+            name="Deactivation time"
+            type="String"
+            cardinality="0"
+            required="true"
+            default="6:00"
+            description="Specified time at which garden lights stop working."/>
+            
+        <AD id="power"
+            name="Light power"
+            type="Integer"
+            cardinality="0"
+            required="false"
+            default="300"
+            min="4"
+            max="400"
+            description="Specified the desired light power in watts units [W]"/>
+            
+        <AD id="time_duration"
+            name="Time duration"
+            type="Integer"
+            cardinality="0"
+            required="false"
+            default="30"
+            min="0"
+            max="3600"
+            description="Specified the time duration of lighting in seconds [s]"/>
+
+    </OCD>
+
+    <Designate pid="org.eclipse.kura.garden_lights.GardenLights">
+        <Object ocdref="org.eclipse.kura.garden_lights.GardenLights"/>
+    </Designate>
+</MetaData>
